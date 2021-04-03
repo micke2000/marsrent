@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mars Rent</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style15.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,700;0,900;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <wrapper>
+    <section id="header">
+      <h1>Mars Rent</h1>
+      <img src="img/med/mr_front.png" srcset="
+     img/small/mr_front.png 1000w, 
+     img/med/mr_front.png 2000w" alt="frontbgc" class="front" sizes="  
+      (min-width: 1336px) 2000px, 
+      100vw" data-sila="0">
+      <img src="img/med/mr_mdl.png" srcset="
+     img/small/mr_mdl.png 1000w, 
+     img/med/mr_mdl.png 2000w" sizes="  
+      (min-width: 1336px) 2000px, 
+      100vw" alt="" class="mid" data-sila="0.025">
+      <img src="img/med/mr_bck.png" srcset="
+     img/small/mr_bck.png 1000w, 
+     img/med/mr_bck.png 2000w" sizes="  
+      (min-width: 1336px) 2000px, 
+      100vw" alt="" class="back" data-sila="-0.025">
+      <img src="img/med/mr_stars.png" srcset="
+     img/small/mr_stars.png 1000w, 
+     img/med/mr_stars.png 2000w" sizes="  
+      (min-width: 1336px) 2000px, 
+      100vw" alt="" class="bacg" data-sila="0.025">
+      <img src="img/big/mr_ship_trail.png" alt="" class="ship" data-sila="-0.35">
+      <button>Dołącz</button>
+    </section>
+    <section id="about">
+      <h2>Latanie to nasza pasja!</h2>
+      <div class="bezp"></div>
+      <div class="bezp2"></div>
+      <div class="zdj">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim voluptate voluptas eveniet, nemo esse cumque ex minima optio commodi sunt, aliquam <span>delectus </span>est tempora, accusantium quae ipsum distinctio odio placeat!</p>
+        <img src="img/big/mr_ship_trail.png" alt="" class="shipa">
+      </div>
+      <img src="img/med/mr_front.png" srcset="
+     img/small/mr_front.png 1000w, 
+     img/med/mr_front.png 2000w" alt="frontbgc" class="front" sizes="  
+      (min-width: 1336px) 2000px, 
+      100vw" data-sila="0">
+    </section>
+    <section id="boxes">
+      <section class="kont">
+        <div class="block">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, sunt!</p>
+        </div>
+        <div class="block">
+          <p>Explicabo corporis nobis, dicta atque id, fugit excepturi in eos?</p>
+        </div>
+        <div class="block">
+          <p>Enim iusto repudiandae sequi ducimus corporis reprehenderit tempore eos eligendi!</p>
+        </div>
+      </section>
+    </section>
+    <section id="form">
+
+      <img src="img/med/mr_front.png" srcset="
+     img/small/mr_front.png 1000w, 
+     img/med/mr_front.png 2000w" alt="frontbgc" class="front" sizes="  
+      (min-width: 1336px) 2000px, 
+      100vw">
+      <img src="img/med/mr_mdl.png" srcset="
+     img/small/mr_mdl.png 1000w, 
+     img/med/mr_mdl.png 2000w" sizes="  
+      (min-width: 1336px) 2000px, 
+      100vw" alt="" class="mid">
+      <div class="kont">
+        <h1>Już teraz wybierz swój statek! </h1>
+        <form action="mailto:morwin.org@gmail.com" method="post">
+          <fieldset>
+            <label for="imie">Imię:</label><input type="text" name="imie" class="imie" id="imie" required oninvalid="this.setCustomValidity('Musisz wybrać imie dla statku!')" onchange="this.setCustomValidity('')" placeholder="Wymyśl coś fajnego!">
+          </fieldset>  
+          <fieldset class="wlks">
+            <label for="rozmiar">Wielkość:</label>
+            <div class="pole"><input type="radio" name="rozmiar" value="M" required class="rdio" /> Mały</div>
+            <div class="pole"><input type="radio" name="rozmiar" value="S" class="rdio" /> Średni</div>
+            <div class="pole"><input type="radio" name="rozmiar" value="D" class="rdio" /> Duży</div>
+          </fieldset>
+          <fieldset class="moc">
+            <label for="rozmiar">Ciąg początkowy(kN):</label>
+            <div class="pole"><input type="radio" name="moc" value="4k" required class="rdio"/> 4900</div>
+            <div class="pole"><input type="radio" name="moc" value="5k" class="rdio" /> 5500</div>
+            <div class="pole"><input type="radio" name="moc" value="6k" class="rdio" /> 6000</div>
+          </fieldset>
+          <fieldset class="dod">
+            <label for="rozmiar">Dodatki:</label>
+            <div class="pole"><input type="checkbox" name="dodatki" value="Jacuzzi" class="chck" id="dod" /> Jacuzzi</div>
+            <div class="pole"><input type="checkbox" name="dodatki" value="Dod.dzialo" class="chck" id="dod" /> Dodatkowe działo</div>
+            <div class="pole"><input type="checkbox" name="dodatki" value="Mod.niewidzial." class="chck" id="dod" /> Moduł niewidzialności</div>
+          </fieldset>
+          <input type="submit" value="Zamów" class="btn">
+        </form>
+        <img src="img/big/astro.png" alt="astronauta" class="astro">
+        <div class="panel">
+        <p>A</p>
+        </div>
+      </div>
+    </section>
+    <footer>Michał Mickiewicz 2021</footer>
+    <div class="wrap">
+    <section id="zamowienia">
+     <div class="close"></div>
+      <div class="kont">
+        <div class="orders">
+         <h2>Zamówienia</h2>
+          <textarea name="zamowienia" id="zam" cols="30" rows="10" readonly></textarea>
+          <p>Edycja</p>
+          <div class="numer">
+          <label for="numerz">Nr: <input type="number" name="numerz" placeholder="Numer zam. do edycji"></label>
+          <button class="ok nr">Ok</button>
+          </div>
+          <div class="pola">
+            <label for="imiez">Imię: <input type="text" name="imiez"></label>
+            <label for="rozmiarz">Rozmiar: <input type="text" name="rozmiarz"></label>
+            <label for="silaz">Siła: <input type="text" name="silaz"></label>
+            <label for="dodaz">Dodatki: <input type="text" name="dodaz"></label>
+            <button class="ok">Ok</button>
+            <button class="usun">Usuń zam.</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+  </wrapper>
+</body>
+
+<script src="script9.js"></script>
+
+
+</html>

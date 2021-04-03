@@ -1,0 +1,1173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  max-width: 100vw;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden !important;
+}
+
+/*HEADER*/
+#header {
+  width: 100vw;
+  height: 100vh;
+  background-color: #E6F9FF;
+  overflow: hidden;
+  z-index: 0;
+}
+
+#header h1 {
+  position: absolute;
+  width: 100%;
+  top: 25%;
+  left: 0;
+  text-align: center;
+  font-weight: 900;
+  font-size: 48px;
+  font-style: italic;
+  font-family: "Raleway", sans-serif;
+  z-index: 4;
+  font-style: italic;
+  animation-name: wyloth1;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes wyloth1 {
+  0% {
+    opacity: 0;
+
+  }
+
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+#header img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transition: all 0.5s;
+}
+
+#header img.front {
+  z-index: 6;
+}
+
+#header img.mid {
+  transform: translate(0, -10%);
+  z-index: 4;
+}
+
+#header img.ship {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0) scale(2.2);
+  width: 100%;
+  z-index: 3;
+  transition: all 0.4s;
+}
+
+#header img.back {
+  transform: translate(0, -20%);
+  z-index: 2;
+}
+
+#header img.bacg {
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 97%;
+  transform: scale(1.3) translate(-10%, 10%);
+  animation-name: wyloth1;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+
+#header button {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  width: 17vh;
+  height: 6vh;
+  border-radius: 50px;
+  border-style: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  transform: translate(-50%, -50%);
+  transition: transform ease-in 0.3s, opacity ease-in-out 0.2s;
+  z-index: 7;
+  outline: none;
+}
+
+#header button:hover {
+  transform: translate(-50%, -60%);
+  background-color: black;
+  color: white;
+  outline: none;
+}
+
+#header button.hide {
+  transform: translate(-50%, 70%) scale(0);
+  opacity: 0;
+}
+
+/* O NAS */
+#about {
+  position: relative;
+  background-color: #E43A19;
+  width: 100vw;
+  height: 85vh;
+  font-family: "Raleway", sans-serif;
+  color: white;
+}
+
+#about div.bezp {
+  position: absolute;
+  top: -5%;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+  background-color: #E43A19;
+  z-index: 0;
+  transform: translate(0, -20%);
+}
+
+#about div.bezp2 {
+  position: absolute;
+  width: 100%;
+  height: 30vh;
+  top: 0;
+  left: 0;
+  background-color: #E43A19;
+  z-index: 4;
+  opacity: 1;
+  transform: translate(0, -10%);
+}
+
+#about h2 {
+  position: relative;
+  top: -5vh;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  text-align: center;
+  font-weight: 900;
+  font-size: 26px;
+  z-index: 6;
+}
+
+#about p {
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 12vh;
+  margin-left: 8vw;
+  margin-right: 8vw;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+  z-index: 5;
+}
+
+#about p.hide {
+  opacity: 0;
+  transform: translateY(50%);
+}
+
+#about p span {
+  color: black;
+  font-style: italic;
+}
+
+#about div.zdj {
+  width: 100%;
+  overflow: hidden;
+  z-index: 3;
+}
+
+#about div.nad {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+}
+
+#about img.shipa {
+  position: relative;
+  top: 100%;
+  left: 50%;
+  transform: translate(-70%, 0%) scaleX(-1) rotate(-40deg);
+  width: 200%;
+  z-index: 5;
+  transition: all 0.5s;
+}
+
+#about img.shipa.hide {
+  /*  transform: translate(-100%, -50%) scaleX(-1) rotate(0);*/
+  opacity: 0;
+}
+
+#about img.front {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  transform: rotate(180deg)translate(0, -98%);
+}
+
+/*BOXES*/
+#boxes {
+  position: relative;
+  width: 100vw;
+  height: 140vh;
+  margin-bottom: 40vh;
+}
+
+#boxes .kont {
+  position: absolute;
+  left: 50%;
+  top: 20vh;
+  transform: translate(-50%, 0);
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  justify-content: space-around;
+  height: 100%;
+  width: 90%;
+  max-width: 400px;
+}
+
+#boxes .kont div.block {
+  position: relative;
+  border-radius: 140px;
+  background-color: #E43A19;
+  flex-basis: 20%;
+  text-align: center;
+}
+
+#boxes .kont div.block:nth-last-of-type(2) {
+  background-color: #E54A2B;
+}
+
+#boxes .kont div.block:nth-last-of-type(3) {
+  background-color: #F16449;
+}
+
+#boxes .kont div.block p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Raleway", sans-serif;
+  color: white;
+  font-size: 18px;
+  transition: ease-out 0.15s;
+}
+
+/*FORMULARZ*/
+#form {
+  position: relative;
+  width: 100vw;
+  height: 180vh;
+  background-color: #E43A19;
+  font-family: "Raleway", sans-serif;
+}
+
+#form img {
+  position: absolute;
+  width: 100%;
+  transition: all 0.1s;
+}
+
+#form img.front {
+  transform: translateY(-90%) scaleX(-1);
+  top: 0;
+  left: 0;
+  z-index: 3;
+
+}
+
+#form img.mid {
+  transform: translateY(-100%) scaleX(-1);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#form div.kont img.astro {
+  bottom: 0;
+  right: 0;
+  transform: translate(5%, 40%) scaleX(-1);
+  max-width: 800px;
+}
+
+#form div.kont {
+  padding: 10vh 10vw;
+  padding-bottom: 35vh;
+  position: absolute;
+  width: 92vw;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  color: white;
+  background-color: #E65D41;
+  border-radius: 77px;
+  overflow: hidden;
+  z-index: 4;
+}
+
+#form label {
+  font-weight: bold;
+}
+
+#form div.kont h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 4vh;
+}
+
+#form div.kont form {
+  border-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+#form div.kont form fieldset {
+  border-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5vh;
+  z-index: 2;
+}
+
+#form div.kont form input {
+  border-style: none;
+}
+
+#form div.kont form input.imie {
+  border-radius: 20px;
+  border-style: none;
+  height: 4vh;
+  opacity: 0.8;
+  font-family: "Raleway", sans-serif;
+  transform-origin: left;
+  transition: ease-in 0.2s;
+  font-size: 16px;
+  font-weight: normal;
+
+}
+
+#form div.kont form fieldset div.pole {
+  position: relative;
+  transition: ease-in 0.3s;
+  transform-origin: left;
+
+}
+
+#form div.kont form fieldset div.pole:hover {
+  transform: scale(1.1);
+
+}
+
+#form div.kont form input.imie:hover {
+  opacity: 1;
+  transform: scaleX(1.01);
+  outline: none;
+}
+
+#form div.kont form input.imie:focus {
+  opacity: 1;
+  transform: scaleX(1.01);
+  outline: none;
+}
+
+#form div.kont form .btn {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 3vw 0;
+  width: 35%;
+  font-weight: bold;
+  font-size: 16px;
+  color: black;
+  font-family: "Raleway", sans-serif;
+  border-style: none;
+  border-radius: 20px;
+  z-index: 1;
+  transition: ease-in .2s;
+
+}
+
+#form div.kont form input[type="checkbox"]:checked:after {
+  content: " ";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: black;
+  animation-fill-mode: both;
+  animation-name: wylot;
+  animation-timing-function: ease-in;
+  animation-duration: 0.1s;
+}
+
+#form div.kont form input[type="radio"]:checked:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: black;
+  animation-fill-mode: both;
+  animation-name: wylot;
+  animation-timing-function: ease-in;
+  animation-duration: 0.1s;
+}
+
+@keyframes wylot {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+
+}
+
+#form div.kont form .btn:hover {
+  color: white;
+  background-color: black;
+  transform: translate(-50%, -10%);
+  outline: none;
+}
+#form div.panel{
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  background-color: white;
+  width: 10vw;
+  height: 10vw;
+  max-height: 85px;
+  max-width: 85px;
+  border-radius: 50%;
+  cursor: pointer;
+   color: black;
+  transition: 0.2s ease-in;
+  
+}
+#form div.panel:hover{
+  color: white;
+  background-color: black;
+}
+#form div.panel p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  font-weight: bold;
+}
+footer {
+  height: 3.5vw;
+  text-align: center;
+  line-height: 3.5vw;
+  font-size: 2vw;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+div.wrap{
+  position: relative;
+}
+
+/*PANEL ADMINA*/
+#zamowienia {
+  height: 120vh;
+  width: 100%;
+  position: absolute;
+/*  overflow-y: hidden;*/
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -130%);
+  z-index: 10;
+  background-color: white; 
+}
+#zamowienia.on{
+    display: block;
+}
+
+#zamowienia div.close {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  z-index: 11;
+  background-color: white;
+  width: 12vw;
+  height: 12vw;
+  max-width: 110px;
+  max-height: 110px;
+  font-weight: bold;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#zamowienia div.close:hover{
+  color: white;
+  background-color: black;
+}
+#zamowienia div.close::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  border-bottom: 4px solid;
+  transform: translate(-50%,-50%);
+}
+
+#zamowienia div.kont {
+  color: white;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  height: 85%;
+/*  max-height: 90vh;*/
+  border-radius: 80px;
+  background-color: #F16449;
+  overflow: auto;
+}
+
+#zamowienia div.kont .orders {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#zamowienia div.kont h2,
+#zamowienia div.kont p{
+  margin-bottom: 6%;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+#zamowienia div.kont .orders textarea {
+  margin-bottom: 4%;
+  outline: none;
+  border: none;
+}
+
+#zamowienia div.kont .numer {
+  margin-bottom: 4%;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+#zamowienia div.kont .orders input{
+  outline: none;
+  border-radius: 10px;
+  border-style: none;
+  font-family: "Raleway", sans-serif;
+}
+#zamowienia div.kont .orders button {
+  border-style: none;
+  border-radius: 10px;
+  padding: 1vw 3vw;
+  background-color: white;
+  transition: 0.2s ease-in;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+#zamowienia div.kont .orders button:hover{
+  color: white;
+  background-color: black;
+  transform: translate(0, -10%);
+  outline: none;
+}
+
+#zamowienia div.kont .orders .numer button.ok {
+  align-self: center;
+  width: 20%;
+}
+
+#zamowienia div.kont .orders .pola {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+#zamowienia div.kont .orders div.pola button.ok {
+  width: 20%;
+  align-self: center;
+  margin-bottom: 4%;
+}
+
+#zamowienia div.kont .orders .pola button.usun {
+  width: 40%;
+  text-align: center;
+  align-self: center;
+  margin-bottom: 4%;
+}
+
+#zamowienia div.kont .orders label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4%;
+  font-family: "Raleway", sans-serif;
+/*  font-size: 40px;*/
+}
+
+/*MOBILNE PORTAIT*/
+@media(orientation: portrait) and (min-width:360px) {
+  #header h1 {
+    font-size: 50px;
+  }
+
+  #about h2 {
+    font-size: 28px;
+  }
+
+  #about p {
+    font-size: 20px;
+  }
+
+  #boxes .kont div.block p {
+    font-size: 20px;
+  }
+
+  #form {
+    height: 160vh;
+  }
+
+  #form div.kont {
+    font-size: 22px;
+  }
+}
+
+@media(orientation: portrait) and (min-width:414px) {
+  #header h1 {
+    font-size: 55px;
+  }
+
+  #header button {
+    font-size: 20px;
+  }
+
+  #about h2 {
+    font-size: 30px;
+  }
+
+  #about p {
+    font-size: 22px;
+  }
+
+  #form div.kont form .btn {
+    font-size: 18px;
+  }
+  #zamowienia div.kont .orders button{
+    font-size: 18px;
+  } 
+  #zamowienia div.kont .orders label{
+  font-size: 22px;
+  }
+  #zamowienia div.kont .orders input{
+    font-size: 18px;
+  }
+}
+
+@media(orientation: portrait) and (min-width:540px) {
+  #boxes .kont div.block p {
+    font-size: 22px;
+  }
+
+  #form div.kont {
+    padding-bottom: 40vh;
+  }
+
+  #form div.kont form .btn {
+    bottom: 29vh;
+  }
+  #zamowienia div.kont .orders p{
+    font-size: 22px;
+  }
+}
+
+@media(orientation: portrait) and (min-width:768px) {
+  #header h1 {
+    font-size: 66px;
+  }
+
+  #header button {
+    font-size: 24px;
+  }
+
+  #about h2 {
+    font-size: 46px;
+  }
+
+  #about p {
+    font-size: 28px;
+  }
+
+  #boxes .kont div.block p {
+    font-size: 26px;
+  }
+
+  #boxes .kont {
+    height: 90%;
+    max-width: 450px;
+  }
+
+  #form div.kont {
+    font-size: 30px;
+  }
+
+  #form div.kont h1 {
+    font-size: 44px;
+  }
+
+  #form div.kont form .btn {
+    border-radius: 30px;
+    max-width: 220px;
+    font-size: 26px;
+  }
+   #zamowienia div.kont h2{
+    font-size:36px;
+  }
+  #form div.kont form input.imie {
+    font-size: 22px;
+  }
+  #zamowienia div.kont .orders p{
+    font-size: 24px;
+  }
+  #zamowienia div.kont .orders button{
+    border-radius: 30px;
+  }
+  #zamowienia div.kont .orders label{
+  font-size: 28px;
+  }
+}
+
+/*LANDSCAPE MOBILNE*/
+@media(orientation: landscape) and (min-width:568px) {
+  #header img.front {
+    transform: translateY(5%);
+  }
+
+  #header img.mid {
+    transform: translateY(1%);
+  }
+
+  #header img.back {
+    transform: translateY(2%);
+  }
+
+  #header img.ship {
+    transform: translate(-45%, -25%) scale(1.2);
+  }
+
+  #header button {
+    font-size: 14px;
+  }
+
+  #about h2 {
+    font-size: 36px;
+  }
+
+  #about img.shipa {
+    transform: translate(-62%, -30%) scale(-0.55, 0.55) rotate(-40deg);
+  }
+
+  #boxes {
+    height: 180vh;
+  }
+
+  #boxes .kont {
+    margin-top: 15vh;
+    height: 80%;
+    max-width: 300px;
+  }
+
+  #boxes .kont div.block {
+    flex-basis: 28%;
+  }
+
+  #form {
+    height: 200vh;
+  }
+
+  #form div.kont {
+    padding-bottom: 55vh;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    font-size: 20px;
+  }
+
+  #form div.kont img.astro {
+    transform: translate(41%, 35%) scale(-0.8, 0.8);
+  }
+
+  #form div.kont form fieldset {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #form div.kont form fieldset .pole {
+    margin-right: 1.2vw;
+  }
+
+  #form div.kont form fieldset label {
+    width: 100%;
+  }
+}
+
+@media(min-width:1024px) {
+
+  #header h1 {
+    font-size: 80px;
+  }
+
+  #header button {
+    font-size: 26px;
+  }
+
+  #header img.front {
+    transform: translateY(2%);
+  }
+
+  #header img.ship {
+    transform: translate(-50%, 0%) scale(1.8);
+  }
+
+  #about {
+    height: 60vh;
+  }
+
+  #about h2 {
+    font-size: 56px;
+  }
+
+  #about p {
+    font-size: 32px;
+  }
+
+  #about img.shipa {
+    transform: translate(-66%, -25%) scale(-0.7, 0.7) rotate(-40deg);
+  }
+
+  #boxes {
+    height: 50vh;
+  }
+
+  #boxes .kont {
+    margin-top: 15vh;
+    flex-direction: row;
+    max-width: 1024px;
+    height: 28%;
+    justify-content: space-between;
+  }
+
+  #boxes .kont div.block {
+    flex-basis: 32%;
+  }
+
+  #boxes .kont div.block p {
+    line-height: 100%;
+    font-size: 23px;
+    width: 90%;
+  }
+
+  #form {
+    height: 145vh;
+  }
+
+  #form div.kont {
+    padding-bottom: 28vh;
+  }
+
+  #form div.kont h1 {
+    font-size: 52px;
+  }
+
+  #form div.kont form .btn {
+    bottom: 18vh;
+    padding: 2.5vw 0;
+    border-radius: 40px;
+  }
+
+  #form div.kont form input.imie {
+    max-width: 600px;
+  }
+
+  #form div.kont img.astro {
+    transform: translate(40%, 35%) scale(-0.9, 0.9);
+  }
+  #zamowienia div.kont h2{
+  font-size:40px;
+    margin-bottom: 3%;
+  }
+  #zamowienia div.kont .orders p{
+    font-size: 28px;
+    margin-bottom: 3%;
+  }
+  #zamowienia div.kont .orders button{
+    border-radius: 34px;
+    font-size: 20px;
+    margin-bottom: 2%;
+  }
+   #zamowienia div.kont .orders input{
+    font-size: 26px;
+     border-radius: 40px;
+  }
+  #zamowienia div.kont .orders .numer button.ok{
+     margin-bottom: 0 ;
+  }
+   
+  #zamowienia div.kont .orders div.pola button.ok{
+    margin-bottom: 2%;
+  }
+  #zamowienia div.kont .orders label{
+  font-size: 30px;
+    margin-bottom: 2%;
+  }
+}
+
+@media(orientation:landscape) and (min-width:1024px) {
+  #header h1 {
+    font-size: 72px;
+  }
+
+  #header img.ship {
+    transform: translate(-45%, -5%) scale(1.5);
+  }
+
+  #about {
+    height: 65vh;
+  }
+
+  #about h2 {
+    font-size: 54px;
+  }
+
+  #about p {
+    font-size: 30px;
+  }
+
+  #about img.shipa {
+    transform: translate(-62%, -30%) scale(-0.55, 0.55) rotate(-40deg);
+  }
+
+  #boxes {
+    height: 80vh;
+  }
+
+  #boxes .kont {
+    margin-top: 22vh;
+  }
+
+  #form {
+    height: 120vh;
+  }
+}
+
+/*DUŻE EKRANY*/
+@media(min-width:1200px) {
+  #header h1 {
+    top: 18%;
+  }
+
+  #about {
+    height: 80vh;
+
+  }
+
+  #about p {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #header img.ship {
+    transform: translate(-50%, -15%) scale(1.4);
+  }
+
+  #header img.bacg {
+    transform: scale(1.1) translate(0, 0);
+  }
+
+  #header img.mid {
+    transform: translate(0, -5%);
+  }
+
+  #header img.back {
+    transform: translate(0, -10%);
+  }
+
+  #about {
+    height: 60vh;
+  }
+
+  #about img.shipa {
+    transform: translate(-70%, -22%) scale(-0.5, 0.5) rotate(-30deg);
+  }
+
+  #about p {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    max-width: 500px;
+    text-align: right;
+    font-size: 30px;
+  }
+
+  #boxes {
+    height: 70vh;
+  }
+
+  #boxes .kont {
+    margin-top: 20vh;
+    max-width: 1100px;
+    min-height: 210px;
+  }
+
+  #form {
+    height: 120vh;
+  }
+
+  #form div.kont {
+    border-radius: 100px;
+    font-size: 28px;
+  }
+
+  #form div.kont form .btn {
+    max-width: 220px;
+    border-radius: 50px;
+    padding: 2vw 0;
+    font-size: 20px;
+  }
+
+  #form div.kont form fieldset {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #form div.kont form fieldset div.pole {
+    margin-right: 3vw;
+  }
+
+  #form div.kont form fieldset label {
+    width: 100%;
+    margin-bottom: 2vh;
+  }
+
+  #form div.kont form input.imie {
+    font-size: 22px;
+  }
+   #zamowienia div.kont h2{
+  font-size:48px;
+  }
+  #zamowienia div.kont .orders p{
+    font-size: 32px;
+  }
+  #zamowienia div.kont .orders button{
+    border-radius: 38px;
+  }
+  #zamowienia div.kont .orders input{
+    font-size: 30px;
+  }
+  #zamowienia div.kont .orders label{
+  font-size: 34px;
+  }
+}
+
+@media(min-width:1440px) {
+  #header img.ship {
+    transform: translate(-45%, -10%) scale(1.3);
+  }
+
+  #header img.front {
+    transform: translate(0, 10%);
+  }
+
+  #header img.mid {
+    transform: translate(0, 0);
+  }
+
+  #header img.back {
+    transform: translate(0, 0);
+  }
+
+  #header img.bacg {
+    transform: scale(1) translate(0, 0);
+  }
+
+  #about {
+    height: 60vh;
+  }
+
+  #form div.kont {
+    font-size: 30px;
+    max-width: 1480px;
+  }
+
+  #about img.shipa {
+    transform: translate(-70%, -22%) scale(-0.5, 0.5) rotate(-30deg);
+  }
+
+  #form div.kont form input.imie {
+    font-size: 24px;
+  }
+
+  #form div.kont form fieldset label {
+    width: 100%;
+    margin-bottom: 1.5vh;
+  }
+}
+
+@media(min-width:1600px) {
+
+  #header img.ship {
+    transform: translate(-45%, -20%) scale(1.2);
+  }
+
+  #boxes {
+    height: 100vh;
+  }
+
+  #boxes .kont {
+    margin-top: 30vh;
+    height: 23%;
+    max-width: 1300px;
+  }
+
+  #form div.kont form .btn {
+    padding: 2vh 0;
+  }
+
+  #form div.kont {
+    padding-bottom: 28vh;
+    padding-top: 5vh;
+  }
+
+  #about img.shipa {
+    transform: translate(-70%, -30%) scale(-0.4, 0.4) rotate(-30deg);
+  }
+}
