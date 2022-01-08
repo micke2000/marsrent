@@ -1,6 +1,6 @@
 # Mars Rent
 Projekt strony dla wymyślonej firmy zajmującej się wypożyczaniem statków kosmicznych na Marsie.
-Strona do zobaczenia na: http://hackheroes.cba.pl/MarsRent/ .
+Strona do zobaczenia na: http://serwer2191226.home.pl/marsrent/.
 # Wykorzystane technologie
 * HTML
 * CSS
